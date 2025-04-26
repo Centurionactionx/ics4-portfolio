@@ -1,10 +1,5 @@
 import Image from "next/image";
-// import likeImg from "public/like.png";
-// import shuffleImg from "public/shuffle.png";
-// import backImg from "public/back.png";
-// import playImg from "public/play.png";
-// import nextImg from "public/next.png";
-// import repeatImg from "public/repeat.png";
+/* eslint-disable react/no-unescaped-entities */
 
 
 export default function Home() {
