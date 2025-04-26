@@ -10,6 +10,8 @@ export default function OOP1() {
   const umlsRef = useRef<HTMLDivElement>(null!);
   const instanceStaticRef = useRef<HTMLDivElement>(null!);
   const constructorsRef = useRef<HTMLDivElement>(null!);
+  const sourcesRef = useRef<HTMLDivElement>(null!);
+  const commonMistakesRef = useRef<HTMLDivElement>(null!);
 
   // Update the scroll function
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
@@ -56,6 +58,22 @@ export default function OOP1() {
                   4. Constructors
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection(commonMistakesRef)}
+                  className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                >
+                  5. Common Mistakes
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection(sourcesRef)}
+                  className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                >
+                  6. References
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -83,42 +101,6 @@ export default function OOP1() {
                 blueprint, while objects are instances of those blueprints.
                 Objects fill in attributes that the class has defined and enable
                 predefined methods to become useful.
-              </p>
-              <h2 className="text-xl font-semibold mb-2">Common Mistakes</h2>
-              <h3 className="text-lg font-semibold mb-2">
-                Misunderstanding static vs. instance methods
-              </h3>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
-                Sometimes, you might try to access instance variables from
-                static methods which is not possible. Similarly, you also cannot
-                reference "this" in static methods, nor can you call instance
-                methods from static methods. This is because static methods
-                belong to the class itself, not to any specific instance. They
-                are called using the class name: ClassName.methodName(). On the
-                other hand, instance methods belong to instances (or objects) of
-                the class and are called using an object reference:
-                objectName.methodName(). Additionally, you cannot call static
-                methods using object references, since they are not tied to any
-                particular instance and should be accessed through the class
-                name instead.
-              </p>
-              <h3 className="text-lg font-semibold mb-2">
-                Improper Access Modifiers Usage
-              </h3>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
-                Oftentimes fields are made public, which does not comply with
-                encapsulation principles. It's great practice to make all fields
-                private and to create accessor/mutator methods in order to
-                access/modify such fields.
-              </p>
-              <h3 className="text-lg font-semibold mb-2">
-                Not using overloaded constructors/overloaded methods
-              </h3>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
-                Sometimes, you would want different methods for different use
-                cases, and it's completely fine to create different methods of
-                the same name but with different arguments. This way, it allows
-                for more flexibility within your application.
               </p>
             </div>
           </div>
@@ -201,6 +183,132 @@ export default function OOP1() {
                 class. Constructors do not have a return type, not even void.
                 Constructors are able to be overloaded and even chained.
               </p>
+            </div>
+          </div>
+
+          {/* Common Mistakes Section */}
+          <div
+            ref={commonMistakesRef}
+            className="bg-[#121212] rounded-lg p-5 mb-5"
+          >
+            <div className="w-[60vh] text-white">
+              <h1 className="text-2xl font-bold mb-4">Common Mistakes</h1>
+              <h2 className="text-xl font-semibold mb-2">
+                Misunderstanding static vs. instance methods
+              </h2>
+              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+                Sometimes, you might try to access instance variables from
+                static methods which is not possible. Similarly, you also cannot
+                reference "this" in static methods, nor can you call instance
+                methods from static methods. This is because static methods
+                belong to the class itself, not to any specific instance. They
+                are called using the class name: ClassName.methodName(). On the
+                other hand, instance methods belong to instances (or objects) of
+                the class and are called using an object reference:
+                objectName.methodName(). Additionally, you cannot call static
+                methods using object references, since they are not tied to any
+                particular instance and should be accessed through the class
+                name instead.
+              </p>
+              <h2 className="text-xl font-semibold mb-2">
+                Improper Access Modifiers Usage
+              </h2>
+              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+                Oftentimes fields are made public, which does not comply with
+                encapsulation principles. It's great practice to make all fields
+                private and to create accessor/mutator methods in order to
+                access/modify such fields.
+              </p>
+              <h2 className="text-xl font-semibold mb-2">
+                Not using overloaded constructors/overloaded methods
+              </h2>
+              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+                Sometimes, you would want different methods for different use
+                cases, and it's completely fine to create different methods of
+                the same name but with different arguments. This way, it allows
+                for more flexibility within your application.
+              </p>
+            </div>
+          </div>
+
+          {/* Sources Section */}
+          <div ref={sourcesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
+            <div className="w-[60vh] text-white">
+              <h1 className="text-2xl font-bold mb-4">References</h1>
+
+              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300">
+                <li>
+                  <span className="font-semibold">OOP Foundations:</span>
+                  <a
+                    href="https://drive.google.com/file/d/1YRnTjd33LB4C8L6Uj8pMxe3E0V72A10M/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline ml-1"
+                  >
+                    OOP 1 Learning Material (Google Classroom)
+                  </a>
+                  ,
+                  <a
+                    href="https://drive.google.com/file/d/1zlHPg0cPh0kOcAfHx-5h3PzWNsHlOMg-/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline ml-1"
+                  >
+                    Additional OOP 1 Material (Google Classroom)
+                  </a>
+                  ,
+                  <a
+                    href="https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline ml-1"
+                  >
+                    TechTarget - OOP Definition
+                  </a>
+                </li>
+
+                <li>
+                  <span className="font-semibold">UML Diagrams:</span>
+                  <a
+                    href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline ml-1"
+                  >
+                    Visual Paradigm - UML Guide
+                  </a>
+                  ,
+                  <a
+                    href="https://slickplan.com/blog/how-to-make-a-uml-diagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline ml-1"
+                  >
+                    Slickplan - UML Diagram Tutorial
+                  </a>
+                </li>
+
+                <li>
+                  <span className="font-semibold">Methods & Constructors:</span>
+                  <a
+                    href="https://education.launchcode.org/java-web-development/chapters/classes-part2/instance-and-static-methods.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline ml-1"
+                  >
+                    LaunchCode - Instance vs Static Methods
+                  </a>
+                  ,
+                  <a
+                    href="https://www.w3schools.com/java/java_constructors.asp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline ml-1"
+                  >
+                    W3Schools - Java Constructors
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -11,6 +11,7 @@ export default function OOP2() {
   const superSubclassRef = useRef<HTMLDivElement>(null!);
   const isAHasARef = useRef<HTMLDivElement>(null!);
   const commonMistakesRef = useRef<HTMLDivElement>(null!);
+  const sourcesRef = useRef<HTMLDivElement>(null!);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -62,6 +63,14 @@ export default function OOP2() {
                   className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
                 >
                   5. Common Mistakes
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection(sourcesRef)}
+                  className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                >
+                  6. References
                 </button>
               </li>
             </ul>
@@ -268,6 +277,63 @@ export default function OOP2() {
                 type can make your code harder to maintain and extend in the
                 future.
               </p>
+            </div>
+          </div>
+
+          {/* Sources Section */}
+          <div ref={sourcesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
+            <div className="w-[60vh] text-white">
+              <h1 className="text-2xl font-bold mb-4">References</h1>
+
+              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300">
+                <li>
+                  <span className="font-semibold">Core OOP Concepts:</span>
+                  <a
+                    href="https://drive.google.com/file/d/1PVsQknhs6GRXmlJHQuGkTpzFWlNzCpXO/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline ml-1"
+                  >
+                    OOP 2 Teaching Material (Google Classroom)
+                  </a>
+                </li>
+
+                <li>
+                  <span className="font-semibold">Inheritance Basics:</span>
+                  <a
+                    href="https://learn.saylor.org/mod/page/view.php?id=29153"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline ml-1"
+                  >
+                    Saylor Academy - Inheritance Concepts
+                  </a>
+                </li>
+
+                <li>
+                  <span className="font-semibold">Subclasses:</span>
+                  <a
+                    href="https://www.whitman.edu/mathematics/java_tutorial/java/javaOO/subclasses.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline ml-1"
+                  >
+                    Whitman College - Subclasses Tutorial
+                  </a>
+                </li>
+
+                <li>
+                  <span className="font-semibold">IS-A vs HAS-A:</span>
+                  <a
+                    href="https://stackoverflow.com/questions/36162714/what-is-the-difference-between-is-a-relationship-and-has-a-relationship-in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline ml-1"
+                  >
+                    StackOverflow - IS-A vs HAS-A Relationships
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

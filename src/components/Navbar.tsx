@@ -63,19 +63,19 @@ export default function Navbar() {
                   OOP 3
                 </Link>
                 <Link
-                  href="/tutorials/arrays"
+                  href="/tutorials/Arrays"
                   className="block px-4 py-2 text-white hover:bg-[#1DB954] hover:text-white"
                 >
                   Arrays
                 </Link>
                 <Link
-                  href="/tutorials/arraylists"
+                  href="/tutorials/ArrayLists"
                   className="block px-4 py-2 text-white hover:bg-[#1DB954] hover:text-white"
                 >
                   ArrayLists
                 </Link>
                 <Link
-                  href="/tutorials/searching-sorting"
+                  href="/tutorials/SearchingSorting"
                   className="block px-4 py-2 text-white hover:bg-[#1DB954] hover:text-white"
                 >
                   Searching and Sorting
