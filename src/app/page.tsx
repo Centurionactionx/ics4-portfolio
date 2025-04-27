@@ -10,11 +10,11 @@ export default function Home() {
           {/* Player UI */}
           <div className="w-full flex flex-col items-center">
             <Image
-              src="/me.png" // replace with your actual image path
+              src="/me.png"
               alt="Header Artwork"
               width={800}
               height={300}
-              className="w-full object-cover rounded-md mb-4"
+              className="example-code"
             />
             <div className="grid grid-cols-2 gap-2.5 w-full">
               <div className="justify-self-start text-white text-left">

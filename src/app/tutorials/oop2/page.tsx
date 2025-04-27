@@ -82,19 +82,16 @@ export default function OOP2() {
           <h1 className="text-white text-[50px] font-bold pt-3 pb-3">OOP 2</h1>
 
           {/* Introduction Section */}
-          <div
-            ref={introductionRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
-          >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Introduction</h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={introductionRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Introduction</h1>
+              <p className="section-paragraph">
                 OOP 2 gets into more of the details of OOP 1, while building on
                 the fundamentals that have been introduced in OOP 1. It talks
                 about relationships between classes and more of the proper ways
                 to design classes.
               </p>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 In OOP2, you learn about how to create class hierarchies using
                 inheritance, implementing polymorphism, and finding
                 relationships between objects. Overall, these concepts can help
@@ -105,15 +102,10 @@ export default function OOP2() {
           </div>
 
           {/* Mutator and Accessor Methods Section */}
-          <div
-            ref={mutatorAccessorRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
-          >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
-                Mutator and Accessor Methods
-              </h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={mutatorAccessorRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Mutator and Accessor Methods</h1>
+              <p className="section-paragraph">
                 Mutator and accessor methods are used to protect data. By making
                 variables private and using getter and setter methods, you
                 prevent direct access to internal data. This protects the
@@ -124,7 +116,7 @@ export default function OOP2() {
               <h2 className="text-xl font-semibold mb-2">
                 Accessor Methods (Getters)
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Accessor methods, also known as getter methods, retrieves
                 information from a private attribute.
               </p>
@@ -133,12 +125,12 @@ export default function OOP2() {
                 alt="Getter Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
               <h2 className="text-xl font-semibold mb-2">
                 Mutator Methods (Setters)
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Mutator methods, also known as setter methods, modify attributes
                 of the object. They are often called setter methods because they
                 are often used to “set” attributes within an object.{" "}
@@ -148,21 +140,16 @@ export default function OOP2() {
                 alt="Setter Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
           {/* Super-Subclass Relationship Section */}
-          <div
-            ref={superSubclassRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
-          >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
-                Super-Subclass Relationship
-              </h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={superSubclassRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Super-Subclass Relationship</h1>
+              <p className="section-paragraph">
                 A superclass and subclass are related in that the subclass
                 inherits public fields and methods from its superclass. The
                 syntax is defined with: <br></br>
@@ -176,22 +163,22 @@ export default function OOP2() {
                 alt="Setter Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
           {/* IS-A(n) and HAS-A(n) Relationships Section */}
-          <div ref={isAHasARef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
+          <div ref={isAHasARef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">
                 IS-A(n) and HAS-A(n) Relationships
               </h1>
 
               <h2 className="text-xl font-semibold mb-2">
                 IS-A Relationship (Inheritance)
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 IS-A relationships describe inheritance. For example, if I had
                 two classes: Laptop and Computer, I could make Laptop a subclass
                 of Computer since a laptop “is-a” computer. Therefore, the
@@ -203,13 +190,13 @@ export default function OOP2() {
                 alt="IS-A Relationship"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
 
               <h2 className="text-xl font-semibold mb-2">
                 HAS-A Relationship (Composition)
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 HAS-A relationships describe composition. It’s where one class
                 is composed of another. For example, if I had two classes:
                 School and Classroom, I could say that School and Classroom have
@@ -220,23 +207,20 @@ export default function OOP2() {
                 alt="HAS-A Relationship"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
           {/* Common Mistakes Section */}
-          <div
-            ref={commonMistakesRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
-          >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Common Mistakes</h1>
+          <div ref={commonMistakesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Common Mistakes</h1>
 
               <h2 className="text-xl font-semibold mb-2">
                 Not Validating Data in Mutator Methods
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 It's good practice to first check if inputted data is valid
                 before performing actions in mutator methods. For example,
                 values like distance, height, or age cannot be negative since
@@ -247,7 +231,7 @@ export default function OOP2() {
               <h2 className="text-xl font-semibold mb-2">
                 Inconsistent Naming Conventions for Accessor/Mutator Methods
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 It's good practice to use consistent naming conventions to avoid
                 confusion and maintain simplicity within the program. For
                 example, accessor methods should start with "get" and mutator
@@ -259,7 +243,7 @@ export default function OOP2() {
               <h2 className="text-xl font-semibold mb-2">
                 Forgetting to Call super() in Subclass Constructors
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Although Java implicitly calls the super constructor when an
                 object of a subclass is created, it's still proper to explicitly
                 call the super constructor when initializing subclass objects.
@@ -270,7 +254,7 @@ export default function OOP2() {
               <h2 className="text-xl font-semibold mb-2">
                 Confusing IS-A and HAS-A Relationships
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Misapplying these relationships can lead to poor design.
                 Remember: IS-A is for specialization (inheritance), HAS-A is for
                 composition (object as field). Choosing the wrong relationship
@@ -281,11 +265,11 @@ export default function OOP2() {
           </div>
 
           {/* Sources Section */}
-          <div ref={sourcesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">References</h1>
+          <div ref={sourcesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">References</h1>
 
-              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300">
+              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300 pb-5">
                 <li>
                   <span className="font-semibold">Core OOP Concepts:</span>
                   <a

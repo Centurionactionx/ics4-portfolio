@@ -82,15 +82,10 @@ export default function Arrays() {
           <h1 className="text-white text-[50px] font-bold pt-3 pb-3">Arrays</h1>
 
           {/* Introduction Section */}
-          <div
-            ref={introductionRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
-          >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
-                Introduction and Definitions
-              </h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={introductionRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Introduction and Definitions</h1>
+              <p className="section-paragraph">
                 Arrays are one of the most important and most commonly used data
                 structures in programming. They allow us to store lists of
                 related values in an organized fashion.
@@ -99,10 +94,10 @@ export default function Arrays() {
           </div>
 
           {/* 1D Arrays Section */}
-          <div ref={oneDArraysRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">1D Arrays</h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={oneDArraysRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">1D Arrays</h1>
+              <p className="section-paragraph">
                 1D arrays are arrays that have a single row of elements. As the
                 name suggests, the array only stores data in one dimension. To
                 declare an array, the syntax involves the array type,
@@ -110,18 +105,18 @@ export default function Arrays() {
                 proceeding with a space.
               </p>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 After declaring the array, you can immediately assign values to
                 the array or declare an empty array of a set size. For example,
                 an empty array of integers named "ints" with 10 indexes would be
                 created with:
               </p>
 
-              <pre className="bg-[#1a1a1a] p-3 rounded-md mb-6 text-sm">
+              <pre className="code-block">
                 <code>int[] ints = new int[10];</code>
               </pre>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Java arrays' sizes cannot be changed after declaration. To
                 retrieve information from an array, it is done by saying the
                 array's name, immediately followed by a number inside square
@@ -131,27 +126,25 @@ export default function Arrays() {
                 at index 0.
               </p>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
-                For example:
-              </p>
+              <p className="section-paragraph">For example:</p>
 
-              <pre className="bg-[#1a1a1a] p-3 rounded-md mb-6 text-sm text-wrap">
+              <pre className="code-block text-wrap">
                 <code>
                   {`String[] weekdays = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};`}
                 </code>
               </pre>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 In this array, to access Wednesday: <code>weekdays[2]</code>
               </p>
             </div>
           </div>
 
           {/* 2D Arrays Section */}
-          <div ref={twoDArraysRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">2D Arrays</h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={twoDArraysRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">2D Arrays</h1>
+              <p className="section-paragraph">
                 2D arrays are arrays that have "rows" and "columns". They are
                 often described as a grid, with two dimensions to store data.
                 You can better visualize 2D arrays as just an array of arrays.
@@ -159,7 +152,7 @@ export default function Arrays() {
                 each row serves as the column of the 2D array.
               </p>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 The syntax for initialization of a 2D array is as follows: the
                 array type, immediately followed by two sets of square brackets,
                 then the array's name. To assign a 2D array, everything that
@@ -172,15 +165,13 @@ export default function Arrays() {
                 array.
               </p>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
-                For example:
-              </p>
+              <p className="section-paragraph">For example:</p>
 
-              <pre className="bg-[#1a1a1a] p-3 rounded-md mb-6 text-sm">
+              <pre className="code-block">
                 <code>int[][] ints = new int[4][3];</code>
               </pre>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 This creates a 2D array of integers with 4 rows and 3 columns
                 named ints.
               </p>
@@ -188,9 +179,9 @@ export default function Arrays() {
           </div>
 
           {/* Examples Section */}
-          <div ref={examplesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Examples</h1>
+          <div ref={examplesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Examples</h1>
 
               <h2 className="text-xl font-semibold mb-2">
                 Fibonacci sequence implementation using arrays:
@@ -200,7 +191,7 @@ export default function Arrays() {
                 alt="Fibonacci Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
 
               <h2 className="text-xl font-semibold mb-2">
@@ -211,20 +202,20 @@ export default function Arrays() {
                 alt="Reverse Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
           {/* Common Mistakes Section */}
-          <div ref={mistakesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Common Mistakes</h1>
+          <div ref={mistakesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Common Mistakes</h1>
 
               <h2 className="text-xl font-semibold mb-2">
                 IndexOutOfBoundsException errors
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 It's a common mistake to access an array index that doesn't
                 exist. Commonly done through trying to access array.length
                 instead of array.length-1. Always remember that Java arrays
@@ -232,7 +223,7 @@ export default function Arrays() {
                 the array.
               </p>
 
-              <pre className="bg-[#1a1a1a] p-3 rounded-md mb-6 text-sm">
+              <pre className="code-block">
                 <code>
                   {`int[] numbers = new int[3]; // indices: 0, 1, 2
 numbers[3] = 10; // Throws ArrayIndexOutOfBoundsException`}
@@ -242,7 +233,7 @@ numbers[3] = 10; // Throws ArrayIndexOutOfBoundsException`}
               <h2 className="text-xl font-semibold mb-2">
                 Using == to compare arrays
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 If you would like to compare if two java arrays have the same
                 elements, it cannot be done using "==". This compares the
                 array's memory address, not content. Two different arrays with
@@ -250,7 +241,7 @@ numbers[3] = 10; // Throws ArrayIndexOutOfBoundsException`}
                 Arrays.equals for content comparison:
               </p>
 
-              <pre className="bg-[#1a1a1a] p-3 rounded-md mb-6 text-sm">
+              <pre className="code-block">
                 <code>
                   {`if (Arrays.equals(a, b)) { // TRUE (checks values)
   System.out.println("Equal");
@@ -261,11 +252,11 @@ numbers[3] = 10; // Throws ArrayIndexOutOfBoundsException`}
           </div>
 
           {/* References Section */}
-          <div ref={referencesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">References</h1>
+          <div ref={referencesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">References</h1>
 
-              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300">
+              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300 pb-5">
                 <li>
                   <a
                     href="https://www.w3schools.com/java/java_arrays.asp"

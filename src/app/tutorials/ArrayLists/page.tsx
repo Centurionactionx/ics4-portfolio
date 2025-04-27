@@ -104,12 +104,12 @@ export default function ArrayLists() {
           {/* Introduction Section */}
           <div
             ref={introductionRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
+            className="section-container"
           >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Introduction</h1>
+            <div className="section-content">
+              <h1 className="section-title">Introduction</h1>
               <h2 className="text-xl font-semibold mb-2">Definition</h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 ArrayLists are like Arrays but with dynamic sizes. They are
                 different from traditional arrays because they can grow or
                 shrink as needed. They are more flexible for situations where an
@@ -121,32 +121,32 @@ export default function ArrayLists() {
           {/* Declaration Section */}
           <div
             ref={declarationRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
+            className="section-container"
           >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
+            <div className="section-content">
+              <h1 className="section-title">
                 Declaration and Initialization
               </h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 In order to be declared, it requires importing the
                 java.util.ArrayList class.
               </p>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Once imported, ArrayLists can be declared and initialized with
                 the following syntax:
               </p>
 
-              <pre className="bg-[#1a1a1a] p-3 rounded-md mb-6 text-sm">
+              <pre className="code-block">
                 <code>
                   ArrayList&lt;[type]&gt; name = new ArrayList&lt;[type]&gt;();
                 </code>
               </pre>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 For example:
               </p>
 
-              <pre className="bg-[#1a1a1a] p-3 rounded-md mb-6 text-sm">
+              <pre className="code-block">
                 <code>
                   ArrayList&lt;String&gt; names = new ArrayList&lt;&gt;();
                 </code>
@@ -155,10 +155,10 @@ export default function ArrayLists() {
           </div>
 
           {/* Methods Section */}
-          <div ref={methodsRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">ArrayList Methods</h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={methodsRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">ArrayList Methods</h1>
+              <p className="section-paragraph">
                 ArrayList specific methods include:
               </p>
 
@@ -183,38 +183,38 @@ export default function ArrayLists() {
                 </li>
               </ul>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 These can mostly be found in the Java quick reference sheet.
               </p>
             </div>
           </div>
 
           {/* Operations Section */}
-          <div ref={operationsRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
+          <div ref={operationsRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">
                 Accessing and Modifying Elements
               </h1>
 
               <h2 className="text-xl font-semibold mb-2">Accessing Elements</h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 To access elements in an ArrayList, you can use the{" "}
                 <code>get()</code> or <code>contains()</code> methods.
               </p>
 
               <h2 className="text-xl font-semibold mb-2">Modifying Elements</h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 To modify elements in an ArrayList, you can use the{" "}
                 <code>remove()</code> and <code>set()</code> methods.
               </p>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 <code>remove()</code> will return the element at the desired
                 index, remove it from the ArrayList, and shift all the elements
                 proceeding it forwards by 1, thus reducing their indices by 1.
               </p>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 <code>set()</code> just sets the element at the desired index to
                 the desired new element.
               </p>
@@ -222,12 +222,12 @@ export default function ArrayLists() {
           </div>
 
           {/* Examples Section */}
-          <div ref={examplesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Examples</h1>
+          <div ref={examplesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Examples</h1>
 
               <h2 className="text-xl font-semibold mb-2">Shopping Cart</h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Impulse buyers might walk into a Costco just for the hot dog but
                 leave with $200 worth of items. In this scenario, the intended
                 list of purchases only includes one item. However, using an
@@ -240,20 +240,20 @@ export default function ArrayLists() {
                 alt="Shopping Cart Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
           {/* Common Mistakes Section */}
-          <div ref={mistakesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Common Mistakes</h1>
+          <div ref={mistakesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Common Mistakes</h1>
 
               <h2 className="text-xl font-semibold mb-2">
                 IndexOutOfBoundsException
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 When using <code>ArrayList.size()</code> and referring to that
                 size to access an index inside the ArrayList. Remember that
                 indices are 0-based while size returns the count.
@@ -262,7 +262,7 @@ export default function ArrayLists() {
               <h2 className="text-xl font-semibold mb-2">
                 Ignoring Autoboxing
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Forgetting that primitive types have to be fully typed out. For
                 example, <code>int</code> → <code>Integer</code>
                 when declaring <code>ArrayList&lt;Integer&gt;</code>.
@@ -271,17 +271,17 @@ export default function ArrayLists() {
           </div>
 
           {/* Autoboxing Section */}
-          <div ref={boxingRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
+          <div ref={boxingRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">
                 Autoboxing and Autounboxing
               </h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Java automatically converts primitives to their wrapper classes
                 (autoboxing) and vice versa (unboxing).
               </p>
 
-              <pre className="bg-[#1a1a1a] p-3 rounded-md mb-6 text-sm">
+              <pre className="code-block">
                 <code>
                   {`ArrayList<Integer> numbers = new ArrayList<>();  
 numbers.add(5); // Autoboxing (int -> Integer)  
@@ -289,7 +289,7 @@ int num = numbers.get(0); // Unboxing (Integer -> int)`}
                 </code>
               </pre>
 
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 This situation can lead to a <code>NullPointerException</code>{" "}
                 error if the ArrayList contains null and is unboxed.
               </p>
@@ -297,11 +297,11 @@ int num = numbers.get(0); // Unboxing (Integer -> int)`}
           </div>
 
           {/* References Section */}
-          <div ref={referencesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">References</h1>
+          <div ref={referencesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">References</h1>
 
-              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300">
+              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300 pb-5">
                 <li>
                   <a
                     href="https://www.w3schools.com/java/java_arraylist.asp"

@@ -30,3 +30,27 @@ body {
     scroll-padding-top: 4.5rem; /* height of your navbar */
   }
 }
+
+.section-container {
+  @apply bg-[#121212] rounded-lg pt-5 pr-5 pl-5 mb-5;
+}
+
+.section-content {
+  @apply w-[60vh] text-white;
+}
+
+.section-title {
+  @apply text-2xl font-bold mb-4;
+}
+
+.code-block {
+  @apply bg-[#1a1a1a] p-3 rounded-md mb-5 text-sm;
+}
+
+.section-paragraph {
+  @apply text-sm text-gray-300 leading-relaxed mb-5;
+}
+
+.example-code {
+  @apply w-full object-cover rounded-md mb-5;
+}

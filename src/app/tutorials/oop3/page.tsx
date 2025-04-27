@@ -110,15 +110,10 @@ export default function OOP3() {
           <h1 className="text-white text-[50px] font-bold pt-3 pb-3">OOP 3</h1>
 
           {/* Introduction Section */}
-          <div
-            ref={introductionRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
-          >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
-                Introduction and Definitions
-              </h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={introductionRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Introduction and Definitions</h1>
+              <p className="section-paragraph">
                 OOP 3 explores more of the advanced concepts and techniques in
                 object-oriented programming. The concepts improve code
                 flexibility, but more importantly, scalability. OOP 1 introduces
@@ -131,12 +126,10 @@ export default function OOP3() {
           </div>
 
           {/* this() and super() Section */}
-          <div ref={thisSuperRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
-                this() and super() Functions
-              </h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={thisSuperRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">this() and super() Functions</h1>
+              <p className="section-paragraph">
                 this() is used to call the current class’s constructor or
                 instance variable. It’s used to prevent confusion between
                 potential duplicate items.
@@ -146,9 +139,9 @@ export default function OOP3() {
                 alt="this() Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 super() is used to call the superclass’s constructor, methods,
                 or uncommonly, its variables. It’s used to extend classes
                 properly and initialize anything that has been inherited
@@ -158,18 +151,16 @@ export default function OOP3() {
                 alt="super() Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
           {/* Static vs Dynamic Binding Section */}
-          <div ref={bindingRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
-                Static vs Dynamic Binding
-              </h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={bindingRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Static vs Dynamic Binding</h1>
+              <p className="section-paragraph">
                 Static binding is something that happens at compile time. It’s
                 when a method is called based on the type of the reference
                 variable instead of the actual object.
@@ -179,9 +170,9 @@ export default function OOP3() {
                 alt="Static Binding Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Dynamic binding is something that happens at run time. It’s when
                 methods are actually called with the actual object type instead
                 of the reference variable type. This allows for polymorphism.
@@ -191,19 +182,16 @@ export default function OOP3() {
                 alt="Dynamic Binding Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
           {/* Polymorphism Section */}
-          <div
-            ref={polymorphismRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
-          >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Polymorphism</h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={polymorphismRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Polymorphism</h1>
+              <p className="section-paragraph">
                 Polymorphism is the use of one symbol to represent multiple
                 different types of objects. For example, you can use
                 polymorphism when you want to assign a subclass to a reference
@@ -215,24 +203,22 @@ export default function OOP3() {
                 might not seem like it at first, polymorphism simplifies code by
                 treating different objects uniformly.
               </p>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
-                Example implementation:
-              </p>
+              <p className="section-paragraph">Example implementation:</p>
               <Image
                 src="/polymorphism.png"
                 alt="Polymorphism Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
           {/* Abstract Classes Section */}
-          <div ref={abstractRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Abstract Classes</h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={abstractRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Abstract Classes</h1>
+              <p className="section-paragraph">
                 Abstract classes are classes that are like blueprints for other
                 classes. Objects of abstract classes cannot be instantiated
                 directly but can be subclasses. Abstract classes are declared
@@ -242,7 +228,7 @@ export default function OOP3() {
                 common methods or fields, which would be made easier with
                 abstract classes serving as blueprints for subclasses.
               </p>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Example implementation with payment gateways of different
                 companies:
               </p>
@@ -251,16 +237,16 @@ export default function OOP3() {
                 alt="Abstract Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
           {/* Interfaces Section */}
-          <div ref={interfacesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Interfaces</h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={interfacesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Interfaces</h1>
+              <p className="section-paragraph">
                 Interfaces define a set of requirements that implementing
                 classes must fulfill. They define what a class can do, without
                 defining how it can do it. That is something that can be
@@ -270,7 +256,7 @@ export default function OOP3() {
                 classes are similar to each other, since they need to share
                 common behaviour which is easily implemented with interfaces.
               </p>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Example implementation using interface SmartDevice:
               </p>
               <Image
@@ -278,23 +264,21 @@ export default function OOP3() {
                 alt="Interface Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
               <Image
                 src="/interface2.png"
                 alt="Interface Example"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
-          <div ref={comparisonRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
-                Interfaces vs Abstract Classes
-              </h1>
+          <div ref={comparisonRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Interfaces vs Abstract Classes</h1>
 
               <div className="overflow-x-auto">
                 <table className="min-w-full border border-gray-700">
@@ -390,10 +374,10 @@ export default function OOP3() {
           </div>
 
           {/* Common Mistakes Section */}
-          <div ref={mistakesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Common Mistakes</h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={mistakesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Common Mistakes</h1>
+              <p className="section-paragraph">
                 Not calling super() or this() first in a subclass’s
                 constructors. super() or this() has to be the first statement in
                 a subclass’s constructor. People often rush into initializing
@@ -401,7 +385,7 @@ export default function OOP3() {
                 parent constructor. It’s also a common mistake to forget this on
                 tests and FRQ questions.
               </p>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Confusing static and dynamic binding. Static binding at compile
                 time figures out which methods are available to use based on the
                 reference variable’s type. But dynamic binding determines which
@@ -413,11 +397,11 @@ export default function OOP3() {
 
           {/* Sources Section */}
           {/* Sources Section */}
-          <div ref={sourcesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">References</h1>
+          <div ref={sourcesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">References</h1>
 
-              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300">
+              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300 pb-5">
                 <li>
                   <span className="font-semibold">Core OOP Concepts:</span>
                   <a

@@ -85,14 +85,14 @@ export default function OOP1() {
           {/* Introduction Section */}
           <div
             ref={introductionRef as React.RefObject<HTMLDivElement>}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
+            className="section-container"
           >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Introduction</h1>
+            <div className="section-content">
+              <h1 className="section-title">Introduction</h1>
               <h2 className="text-xl font-semibold mb-2">
                 Definition: What is OOP?
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Object Oriented Programming (OOP) is a concept that organizes
                 software and coding around data, models, or objects instead of
                 functions and logic. We learn about OOP as it's very applicable
@@ -106,16 +106,16 @@ export default function OOP1() {
           </div>
 
           {/* UMLs Section */}
-          <div ref={umlsRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">UMLs</h1>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={umlsRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">UMLs</h1>
+              <p className="section-paragraph">
                 Unified Modeling Languages (UMLs) are a great way of visually
                 representing classes. They are like plans that we make before
                 starting to program, since it's a good way to organize what
                 attributes and methods are going to be used in the class.
               </p>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 UMLs can be mapped in a neat and organized way to show
                 relationships between different classes. It gives a sense of the
                 logical flow in a program.
@@ -125,21 +125,16 @@ export default function OOP1() {
                 alt="Header Artwork"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
           {/* Instance vs Static Methods Section */}
-          <div
-            ref={instanceStaticRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
-          >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">
-                Instance vs Static Methods
-              </h1>
-              <p className="text-white text-sm text-gray-300 leading-relaxed mb-6">
+          <div ref={instanceStaticRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Instance vs Static Methods</h1>
+              <p className="text-white section-paragraph">
                 Instance methods are methods that belong to an object. Since
                 they belong to an object, it requires an object of the class to
                 be instantiated in order for the method to be used. This is
@@ -150,10 +145,10 @@ export default function OOP1() {
                 alt="Header Artwork"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
 
-              <p className="text-white text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="text-white section-paragraph">
                 Static methods are methods that belong to the class. They don't
                 require an object of the class to be created in order to be
                 used. Example implementation:
@@ -163,19 +158,16 @@ export default function OOP1() {
                 alt="Header Artwork"
                 width={800}
                 height={300}
-                className="w-full object-cover rounded-md mb-4"
+                className="example-code"
               />
             </div>
           </div>
 
           {/* Constructors Section */}
-          <div
-            ref={constructorsRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
-          >
-            <div className="w-[60vh] text-white">
+          <div ref={constructorsRef} className="section-container">
+            <div className="section-content">
               <h2 className="text-xl font-semibold mb-2">Constructors</h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Constructors are a special type of method that is used for
                 initialization of an object and is automatically called whenever
                 an object is created. A default constructor is automatically
@@ -187,16 +179,13 @@ export default function OOP1() {
           </div>
 
           {/* Common Mistakes Section */}
-          <div
-            ref={commonMistakesRef}
-            className="bg-[#121212] rounded-lg p-5 mb-5"
-          >
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">Common Mistakes</h1>
+          <div ref={commonMistakesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Common Mistakes</h1>
               <h2 className="text-xl font-semibold mb-2">
                 Misunderstanding static vs. instance methods
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Sometimes, you might try to access instance variables from
                 static methods which is not possible. Similarly, you also cannot
                 reference "this" in static methods, nor can you call instance
@@ -213,7 +202,7 @@ export default function OOP1() {
               <h2 className="text-xl font-semibold mb-2">
                 Improper Access Modifiers Usage
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Oftentimes fields are made public, which does not comply with
                 encapsulation principles. It's great practice to make all fields
                 private and to create accessor/mutator methods in order to
@@ -222,7 +211,7 @@ export default function OOP1() {
               <h2 className="text-xl font-semibold mb-2">
                 Not using overloaded constructors/overloaded methods
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+              <p className="section-paragraph">
                 Sometimes, you would want different methods for different use
                 cases, and it's completely fine to create different methods of
                 the same name but with different arguments. This way, it allows
@@ -232,11 +221,11 @@ export default function OOP1() {
           </div>
 
           {/* Sources Section */}
-          <div ref={sourcesRef} className="bg-[#121212] rounded-lg p-5 mb-5">
-            <div className="w-[60vh] text-white">
-              <h1 className="text-2xl font-bold mb-4">References</h1>
+          <div ref={sourcesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">References</h1>
 
-              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300">
+              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300 pb-5">
                 <li>
                   <span className="font-semibold">OOP Foundations:</span>
                   <a
