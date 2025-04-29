@@ -3,7 +3,6 @@
 
 import Image from "next/image";
 import { useRef } from "react";
-import ParticlesComponent from "../../../components/particles";
 
 export default function OOP1() {
   // Change how we create the refs
