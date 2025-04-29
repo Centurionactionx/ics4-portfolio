@@ -25,7 +25,7 @@ export default function OOP3() {
     <main className="min-h-screen bg-black pt-16">
       <div className="flex items-center justify-center">
         {/* Contents Menu */}
-        <div className="w-64 fixed left-0 top-20 h-screen p-4 overflow-y-auto">
+        <div className="menu-container">
           <div className="bg-[#121212] rounded-lg p-4">
             <h2 className="text-white font-bold mb-4">Contents</h2>
             <ul className="space-y-2">
@@ -280,7 +280,7 @@ export default function OOP3() {
             <div className="section-content">
               <h1 className="section-title">Interfaces vs Abstract Classes</h1>
 
-              <div className="overflow-x-auto">
+              <div className="overflow-x-auto mb-5">
                 <table className="min-w-full border border-gray-700">
                   <thead>
                     <tr className="bg-[#1a1a1a]">
@@ -366,7 +366,7 @@ export default function OOP3() {
                 </table>
               </div>
 
-              <p className="text-sm text-gray-300 leading-relaxed mt-6">
+              <p className="section-paragraph">
                 The choice between interfaces and abstract classes depends on
                 your design needs.
               </p>
@@ -377,21 +377,85 @@ export default function OOP3() {
           <div ref={mistakesRef} className="section-container">
             <div className="section-content">
               <h1 className="section-title">Common Mistakes</h1>
+              <h2 className="text-xl font-semibold mb-2">
+                Not calling super() or this() first in a subclass's
+                constructors
+              </h2>
               <p className="section-paragraph">
-                Not calling super() or this() first in a subclass’s
-                constructors. super() or this() has to be the first statement in
-                a subclass’s constructor. People often rush into initializing
-                fields and attributes inside the subclass before calling the
-                parent constructor. It’s also a common mistake to forget this on
-                tests and FRQ questions.
+                super() or this() has to be the first statement in a subclass's
+                constructor. People often rush into initializing fields and
+                attributes inside the subclass before calling the parent
+                constructor. It's also a common mistake to forget this on tests
+                and FRQ questions.
               </p>
+
+              <pre className="code-block">
+                <code>{`// Banana inheritance example
+public class Fruit {
+  protected String origin;
+  
+  public Fruit(String origin) {
+    this.origin = origin;
+  }
+}
+
+public class Banana extends Fruit {
+  private boolean isRipe;
+  
+  // Correct constructor
+  public Banana(String origin, boolean ripe) {
+    super(origin);  // MUST be first statement
+    this.isRipe = ripe;
+  }
+  
+  // INCORRECT constructor
+  public Banana(String origin, boolean ripe) {
+    this.isRipe = ripe;  // ERROR: super() must be first
+    super(origin);
+  }
+}`}</code>
+              </pre>
+              <h2 className="text-xl font-semibold mb-2">
+                Confusing static and dynamic binding
+              </h2>
               <p className="section-paragraph">
-                Confusing static and dynamic binding. Static binding at compile
-                time figures out which methods are available to use based on the
-                reference variable’s type. But dynamic binding determines which
-                to use based on the actual object’s type. The solution to this
-                problem is often to downcast or upcast to the appropriate type.
+                Static binding at compile time figures out which methods are
+                available to use based on the reference variable's type. But
+                dynamic binding determines which to use based on the actual
+                object's type. The solution to this problem is often to downcast
+                or upcast to the appropriate type.
               </p>
+
+              <pre className="code-block">
+                <code>{`// Banana binding example
+public class Banana {
+  public void peel() {
+    System.out.println("Peeling a generic banana");
+  }
+}
+
+public class CavendishBanana extends Banana {
+  @Override
+  public void peel() {
+    System.out.println("Peeling a Cavendish banana");
+  }
+  
+  public void specialPeel() {
+    System.out.println("Special Cavendish peel");
+  }
+}
+
+// Test class
+public class BananaTest {
+  public static void main(String[] args) {
+    Banana banana = new CavendishBanana();
+    banana.peel();  // Dynamic binding - calls CavendishBanana's peel()
+    
+    // banana.specialPeel();  // Compile error - static binding sees Banana type
+    ((CavendishBanana)banana).specialPeel();  // Solution: downcast
+  }
+}`}</code>
+              </pre>
             </div>
           </div>
 

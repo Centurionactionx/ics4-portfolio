@@ -158,9 +158,11 @@ export default function Bibliography() {
       <h1 className="text-white text-[50px] font-bold pt-3 pb-3">
         Bibliography
       </h1>
-      <div className="section-container pb-5">
-        <h1 className="section-title">Bibliography</h1>
-        <ReferencesList references={references} />
+      <div className="section-container pb-5 ">
+        <div className="section-content">
+          <h1 className="section-title">Bibliography</h1>
+          <ReferencesList references={references} />
+        </div>
       </div>
     </div>
   );

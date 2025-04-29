@@ -21,7 +21,7 @@ export default function Arrays() {
     <main className="min-h-screen bg-black pt-16">
       <div className="flex items-center justify-center">
         {/* Contents Menu */}
-        <div className="w-64 fixed left-0 top-20 h-screen p-4 overflow-y-auto">
+        <div className="menu-container">
           <div className="bg-[#121212] rounded-lg p-4">
             <h2 className="text-white font-bold mb-4">Contents</h2>
             <ul className="space-y-2">

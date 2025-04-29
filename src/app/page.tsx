@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black pt-16">
       <div className="flex flex-col items-center min-h-screen">
-        <div className="bg-[#121212] m-2.5 rounded-lg w-[60vh] p-6 flex flex-col items-center">
+        <div className="bg-[#121212] m-2.5 rounded-lg w-[60vh] p-6 flex flex-col items-center mt-4">
           {/* Player UI */}
           <div className="w-full flex flex-col items-center">
             <Image
@@ -84,10 +84,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <div className="mt-10 text-white w-full">
-            <h2 className="text-xl font-semibold mb-2">Introduction</h2>
-            <p className="text-sm text-gray-300 leading-relaxed">
+        </div>
+        <div className="section-container">
+          <div className="w-[56vh]">
+            <h2 className="section-title">Introduction</h2>
+            <p className="section-paragraph">
               Welcome. This is my ICS4UO portfolio. This is where you can find
               my projects, hobbies, and all sorts of information about myself.
               Here, you will find tutorials through topics learned throughout
@@ -95,11 +96,9 @@ export default function Home() {
               can gain a better understanding of myself, and my approach to
               solving and explaining different concepts.
             </p>
-          </div>
-
-          <div className="mt-10 text-white w-full">
-            <h2 className="text-xl font-semibold mb-2">About the Artist</h2>
-            <p className="text-sm text-gray-300 leading-relaxed">
+          
+            <h2 className="section-title">About the Artist</h2>
+            <p className="section-paragraph">
               My name is Joseph Wang, a Grade 10 student currently at William
               Lyon Mackenzie Collegiate Institute. My friends describe me as a
               mostly funny, sometimes quiet person. I have an interest in math,

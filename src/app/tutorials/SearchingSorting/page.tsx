@@ -22,7 +22,7 @@ export default function SearchingSorting() {
     <main className="min-h-screen bg-black pt-16">
       <div className="flex items-center justify-center">
         {/* Contents Menu */}
-        <div className="w-64 fixed left-0 top-20 h-screen p-4 overflow-y-auto">
+        <div className="menu-container">
           <div className="bg-[#121212] rounded-lg p-4">
             <h2 className="text-white font-bold mb-4">Contents</h2>
             <ul className="space-y-2">
@@ -103,17 +103,31 @@ export default function SearchingSorting() {
             </div>
           </div>
 
-          {/* Use Cases Section */}
           <div ref={useCasesRef} className="section-container">
             <div className="section-content">
               <h1 className="section-title">Use Cases</h1>
+
+              <h2 className="text-xl font-semibold mb-2">
+                Searching Algorithms in Practice
+              </h2>
               <p className="section-paragraph">
-                Searching algorithms are used in large databases to find
-                information through millions of pieces of information.
+                Searching algorithms are very important in modern data retrieval
+                systems. In large-scale databases containing millions of
+                records, efficient searching makes the quality of life much
+                better for all users. These algorithms are used in everything
+                from online shopping searches to research databases, letting
+                users locate specific information in large datasets quickly. The
+                choice between sequential and binary search often depends on
+                whether the data is sorted, with binary search offering
+                dramatically faster results for organized datasets.
               </p>
+
               <p className="section-paragraph">
-                Sorting algorithms are used to analyze data, or make it easier
-                for searching algorithms to do their job.
+                Sorting algorithms do much more than simply organize data. Their
+                job seems simply, but they actually have much bigger impacts
+                such as allowing for efficient data processing. By arranging
+                information in a logical order, they also make it easier for
+                searching algorithms to do their job.
               </p>
             </div>
           </div>
@@ -131,6 +145,18 @@ export default function SearchingSorting() {
                 making it inefficient for large datasets.
               </p>
 
+              <pre className="code-block">
+                <code>{`// Sequential Search for Banana in a fruit basket
+public int SequentialSearch(String[] fruits, String targetBananaType) {
+    for (int i = 0; i < fruits.length; i++) {
+        if (fruits[i].equals(targetBananaType)) {
+            return i; // Return index where found
+        }
+    }
+    return -1; // Banana not found
+}`}</code>
+              </pre>
+
               {/* Binary Search */}
               <h2 className="text-xl font-semibold mb-2">Binary Search</h2>
               <p className="section-paragraph">
@@ -142,6 +168,30 @@ export default function SearchingSorting() {
                 However, Binary search first requires the dataset to be sorted
                 in order to be able to work.
               </p>
+
+              <pre className="code-block">
+                <code>{`// Binary Search for Banana in sorted basket
+public int BinarySearch(String[] sortedFruits, String targetBananaType) {
+    int left = 0;
+    int right = sortedFruits.length - 1;
+    
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        int comparison = targetBananaType.compareTo(sortedFruits[mid]);
+        
+        if (comparison == 0) {
+            return mid; // Banana found at index mid
+        }
+        if (comparison < 0) {
+            right = mid - 1; // Search left half
+        } else {
+            left = mid + 1; // Search right half
+        }
+    }
+    return -1; // Return -1 if banana not found
+}
+`}</code>
+              </pre>
             </div>
           </div>
 

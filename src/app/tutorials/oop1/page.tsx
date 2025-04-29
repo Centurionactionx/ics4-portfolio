@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import { useRef } from "react";
+import ParticlesComponent from "../../../components/particles";
 
 export default function OOP1() {
   // Change how we create the refs
@@ -22,7 +23,7 @@ export default function OOP1() {
     <main className="min-h-screen bg-black pt-16">
       <div className="flex items-center justify-center">
         {/* Contents Menu */}
-        <div className="w-64 fixed left-0 top-20 h-screen p-4 overflow-y-auto">
+        <div className="menu-container">
           <div className="bg-[#121212] rounded-lg p-4">
             <h2 className="text-white font-bold mb-4">Contents</h2>
             <ul className="space-y-2">
@@ -182,41 +183,97 @@ export default function OOP1() {
           <div ref={commonMistakesRef} className="section-container">
             <div className="section-content">
               <h1 className="section-title">Common Mistakes</h1>
+
               <h2 className="text-xl font-semibold mb-2">
                 Misunderstanding static vs. instance methods
               </h2>
               <p className="section-paragraph">
                 Sometimes, you might try to access instance variables from
                 static methods which is not possible. Similarly, you also cannot
-                reference "this" in static methods, nor can you call instance
-                methods from static methods. This is because static methods
-                belong to the class itself, not to any specific instance. They
-                are called using the class name: ClassName.methodName(). On the
-                other hand, instance methods belong to instances (or objects) of
-                the class and are called using an object reference:
-                objectName.methodName(). Additionally, you cannot call static
-                methods using object references, since they are not tied to any
-                particular instance and should be accessed through the class
-                name instead.
+                reference <code>"this"</code> in static methods, nor can you
+                call instance methods from static methods.
               </p>
+
+              <pre className="code-block">
+                <code>{`// (Wrong Way)
+public class Banana {
+  private String variety;  // instance variable
+  
+  public static void printVariety() {
+    // ERROR: Can't access instance members from static method
+    System.out.println(this.variety);  
+  }
+}`}</code>
+              </pre>
+
+              <p className="section-paragraph">
+                This is because static methods belong to the class itself, not
+                to any specific banana. They are called using the class name:{" "}
+                <code>Banana.countBananas()</code>. Instance methods belong to
+                actual banana objects: <code>myBanana.getVariety()</code>.
+              </p>
+
               <h2 className="text-xl font-semibold mb-2">
                 Improper Access Modifiers Usage
               </h2>
               <p className="section-paragraph">
-                Oftentimes fields are made public, which does not comply with
-                encapsulation principles. It's great practice to make all fields
-                private and to create accessor/mutator methods in order to
-                access/modify such fields.
+                Oftentimes fields are made public, which violates encapsulation.
+                Always keep banana details private and use access methods.
               </p>
+
+              <pre className="code-block">
+                <code>{`// BananaBasket (Poor Encapsulation)
+public class BananaBasket {
+  public ArrayList<Banana> bananas;  // BAD: Public field
+  
+  // Anyone can directly modify the bananas!
+}
+
+// Better BananaBasket
+public class BananaBasket {
+  private ArrayList<Banana> bananas;
+  
+  public void addBanana(Banana b) {
+    if(b.isOrganic()) bananas.add(b);
+  }
+  
+  public List<Banana> getBananas() {
+    return Collections.unmodifiableList(bananas);
+  }
+}`}</code>
+              </pre>
+
               <h2 className="text-xl font-semibold mb-2">
-                Not using overloaded constructors/overloaded methods
+                Not using overloaded constructors/methods
               </h2>
               <p className="section-paragraph">
-                Sometimes, you would want different methods for different use
-                cases, and it's completely fine to create different methods of
-                the same name but with different arguments. This way, it allows
-                for more flexibility within your application.
+                Overloading helps create flexible banana-related methods for
+                different use cases.
               </p>
+
+              <pre className="code-block">
+                <code>{`// BananaPeel with Overloaded Methods
+public class BananaPeel {
+  // Overloaded constructors
+  public BananaPeel() {
+    this("yellow");  // Default color
+  }
+  
+  public BananaPeel(String color) {
+    this.color = color;
+  }
+  
+  // Overloaded peel methods
+  public void compost() {
+    compost(30);  // Default 30 days
+  }
+  
+  public void compost(int days) {
+    // Custom composting logic
+    System.out.println("Composting banana peel for " + days + " days");
+  }
+}`}</code>
+              </pre>
             </div>
           </div>
 

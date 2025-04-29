@@ -36,9 +36,12 @@ body {
 }
 
 .section-content {
-  @apply w-[60vh] text-white;
+  @apply w-[75vh] text-white;
 }
 
+.menu-container {
+  @apply w-64 fixed left-0 top-37 h-screen p-4 overflow-y-auto;
+}   
 .section-title {
   @apply text-2xl font-bold mb-4;
 }
@@ -52,5 +55,12 @@ body {
 }
 
 .example-code {
-  @apply w-full object-cover rounded-md mb-5;
+  @apply w-[70%] object-cover rounded-md mb-5 mx-auto;
+}
+
+#tsparticles canvas{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }

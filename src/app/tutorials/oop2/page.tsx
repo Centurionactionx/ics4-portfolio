@@ -21,7 +21,7 @@ export default function OOP2() {
     <main className="min-h-screen bg-black pt-16">
       <div className="flex items-center justify-center">
         {/* Contents Menu */}
-        <div className="w-64 fixed left-0 top-20 h-screen p-4 overflow-y-auto">
+        <div className="w-64 fixed left-0 top-37 h-screen p-4 overflow-y-auto">
           <div className="bg-[#121212] rounded-lg p-4">
             <h2 className="text-white font-bold mb-4">Contents</h2>
             <ul className="space-y-2">
@@ -228,6 +228,20 @@ export default function OOP2() {
                 object integrity and prevent invalid states.
               </p>
 
+              <pre className="code-block">
+                <code>{`// Banana.java - With Validation
+public class Banana {
+  private int daysOld;
+  
+  public void setDaysOld(int days) {
+    if (days < 0) {
+      throw new IllegalArgumentException("Days cannot be negative");
+    }
+    this.daysOld = days;
+  }
+}`}</code>
+              </pre>
+
               <h2 className="text-xl font-semibold mb-2">
                 Inconsistent Naming Conventions for Accessor/Mutator Methods
               </h2>
@@ -240,6 +254,20 @@ export default function OOP2() {
                 developers.
               </p>
 
+              <pre className="code-block">
+                <code>{`// Banana.java - Proper Naming
+public class Banana {
+  private String variety;
+  
+  // Good naming
+  public String getVariety() { return variety; }
+  public void setVariety(String v) { variety = v; }
+  
+  // Avoid inconsistent names like:
+  // public String bananaType() { ... }  // Not standard
+}`}</code>
+              </pre>
+
               <h2 className="text-xl font-semibold mb-2">
                 Forgetting to Call super() in Subclass Constructors
               </h2>
@@ -251,6 +279,26 @@ export default function OOP2() {
                 to pass specific arguments to the superclass constructor.
               </p>
 
+              <pre className="code-block">
+                <code>{`// Banana hierarchy
+public class Fruit {
+  private String origin;
+  
+  public Fruit(String origin) {
+    this.origin = origin;
+  }
+}
+
+public class Banana extends Fruit {
+  private boolean isRipe;
+  
+  public Banana(String origin, boolean ripe) {
+    super(origin);  // Explicit super call
+    this.isRipe = ripe;
+  }
+}`}</code>
+              </pre>
+
               <h2 className="text-xl font-semibold mb-2">
                 Confusing IS-A and HAS-A Relationships
               </h2>
@@ -261,6 +309,18 @@ export default function OOP2() {
                 type can make your code harder to maintain and extend in the
                 future.
               </p>
+
+              <pre className="code-block">
+                <code>{`// IS-A relationship (Inheritance)
+public class CavendishBanana extends Banana {
+  // Special banana variety
+}
+
+// HAS-A relationship (Composition)
+public class BananaBasket {
+  private List<Banana> bananas;  // Basket HAS-A list of bananas
+}`}</code>
+              </pre>
             </div>
           </div>
 

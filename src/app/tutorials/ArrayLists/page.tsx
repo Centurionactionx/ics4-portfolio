@@ -23,7 +23,7 @@ export default function ArrayLists() {
     <main className="min-h-screen bg-black pt-16">
       <div className="flex items-center justify-center">
         {/* Contents Menu */}
-        <div className="w-64 fixed left-0 top-20 h-screen p-4 overflow-y-auto">
+        <div className="menu-container">
           <div className="bg-[#121212] rounded-lg p-4">
             <h2 className="text-white font-bold mb-4">Contents</h2>
             <ul className="space-y-2">
@@ -102,10 +102,7 @@ export default function ArrayLists() {
           </h1>
 
           {/* Introduction Section */}
-          <div
-            ref={introductionRef}
-            className="section-container"
-          >
+          <div ref={introductionRef} className="section-container">
             <div className="section-content">
               <h1 className="section-title">Introduction</h1>
               <h2 className="text-xl font-semibold mb-2">Definition</h2>
@@ -119,14 +116,9 @@ export default function ArrayLists() {
           </div>
 
           {/* Declaration Section */}
-          <div
-            ref={declarationRef}
-            className="section-container"
-          >
+          <div ref={declarationRef} className="section-container">
             <div className="section-content">
-              <h1 className="section-title">
-                Declaration and Initialization
-              </h1>
+              <h1 className="section-title">Declaration and Initialization</h1>
               <p className="section-paragraph">
                 In order to be declared, it requires importing the
                 java.util.ArrayList class.
@@ -142,9 +134,7 @@ export default function ArrayLists() {
                 </code>
               </pre>
 
-              <p className="section-paragraph">
-                For example:
-              </p>
+              <p className="section-paragraph">For example:</p>
 
               <pre className="code-block">
                 <code>
@@ -235,7 +225,7 @@ export default function ArrayLists() {
                 actually unknown.
               </p>
 
-              <Image 
+              <Image
                 src="/shopping.png"
                 alt="Shopping Cart Example"
                 width={800}
@@ -245,37 +235,10 @@ export default function ArrayLists() {
             </div>
           </div>
 
-          {/* Common Mistakes Section */}
-          <div ref={mistakesRef} className="section-container">
-            <div className="section-content">
-              <h1 className="section-title">Common Mistakes</h1>
-
-              <h2 className="text-xl font-semibold mb-2">
-                IndexOutOfBoundsException
-              </h2>
-              <p className="section-paragraph">
-                When using <code>ArrayList.size()</code> and referring to that
-                size to access an index inside the ArrayList. Remember that
-                indices are 0-based while size returns the count.
-              </p>
-
-              <h2 className="text-xl font-semibold mb-2">
-                Ignoring Autoboxing
-              </h2>
-              <p className="section-paragraph">
-                Forgetting that primitive types have to be fully typed out. For
-                example, <code>int</code> → <code>Integer</code>
-                when declaring <code>ArrayList&lt;Integer&gt;</code>.
-              </p>
-            </div>
-          </div>
-
           {/* Autoboxing Section */}
           <div ref={boxingRef} className="section-container">
             <div className="section-content">
-              <h1 className="section-title">
-                Autoboxing and Autounboxing
-              </h1>
+              <h1 className="section-title">Autoboxing and Autounboxing</h1>
               <p className="section-paragraph">
                 Java automatically converts primitives to their wrapper classes
                 (autoboxing) and vice versa (unboxing).
@@ -293,6 +256,68 @@ int num = numbers.get(0); // Unboxing (Integer -> int)`}
                 This situation can lead to a <code>NullPointerException</code>{" "}
                 error if the ArrayList contains null and is unboxed.
               </p>
+            </div>
+          </div>
+
+          {/* Common Mistakes Section */}
+          <div ref={mistakesRef} className="section-container">
+            <div className="section-content">
+              <h1 className="section-title">Common Mistakes</h1>
+
+              <h2 className="text-xl font-semibold mb-2">
+                IndexOutOfBoundsException
+              </h2>
+              <p className="section-paragraph">
+                When using <code>ArrayList.size()</code> and referring to that
+                size to access an index inside the ArrayList. Remember that
+                indices are 0-based while size returns the count. This is
+                particularly common when iterating through collections or trying
+                to access the last element.
+              </p>
+
+              <pre className="code-block">
+                <code>{`// Banana basket example - WRONG
+ArrayList<Banana> bananaBasket = new ArrayList<>();
+bananaBasket.add(new Banana("Cavendish"));
+bananaBasket.add(new Banana("Plantain"));
+
+// Trying to access index 2 (size is 2) - CRASH!
+Banana b = bananaBasket.get(bananaBasket.size());  // IndexOutOfBoundsException
+
+// CORRECT way to get last banana
+Banana lastBanana = bananaBasket.get(bananaBasket.size() - 1);`}</code>
+              </pre>
+
+              <h2 className="text-xl font-semibold mb-2">
+                Ignoring Autoboxing
+              </h2>
+              <p className="section-paragraph">
+                Forgetting that primitive types have to be fully typed out. For
+                example, <code>int</code> → <code>Integer </code> 
+                 when declaring <code>ArrayList&lt;Integer&gt;</code>. Java
+                automatically converts between primitives and their wrapper
+                classes (autoboxing/unboxing), but you still need to declare
+                collections with the wrapper types.
+              </p>
+
+              <pre className="code-block">
+                <code>{`// Banana ripeness tracking - Common mistakes
+
+// WRONG: Can't use primitive type
+// ArrayList<int> daysSincePicked = new ArrayList<>(); 
+
+// CORRECT: Using Integer wrapper
+ArrayList<Integer> daysSincePicked = new ArrayList<>();
+daysSincePicked.add(3);   // Autoboxing int → Integer
+daysSincePicked.add(5);
+
+// Using in calculations (unboxing)
+int totalDays = daysSincePicked.get(0) + daysSincePicked.get(1);
+
+// NUANCE: Watch for NullPointerException
+daysSincePicked.add(null);
+int days = daysSincePicked.get(2);  // NullPointerException!`}</code>
+              </pre>
             </div>
           </div>
 
