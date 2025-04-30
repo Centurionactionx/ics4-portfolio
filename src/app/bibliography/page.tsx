@@ -4,11 +4,11 @@ import ReferencesList from "../../components/ReferencesList";
 export default function Bibliography() {
   const references = [
     {
-      name: "OOP 1 Learning - Google Drive (File 1)",
+      name: "OOP 1 Learning - Google Classroom (File 1)",
       url: "https://drive.google.com/file/d/1YRnTjd33LB4C8L6Uj8pMxe3E0V72A10M/view",
     },
     {
-      name: "OOP 1 Learning - Google Drive (File 2)",
+      name: "OOP 1 Learning - Google Classroom (File 2)",
       url: "https://drive.google.com/file/d/1zlHPg0cPh0kOcAfHx-5h3PzWNsHlOMg-/view",
     },
     {
@@ -32,7 +32,7 @@ export default function Bibliography() {
       url: "https://slickplan.com/blog/how-to-make-a-uml-diagram",
     },
     {
-      name: "OOP 2 Reading - Google Drive",
+      name: "OOP 2 Reading - Google Classroom",
       url: "https://drive.google.com/file/d/1PVsQknhs6GRXmlJHQuGkTpzFWlNzCpXO/view",
     },
     {
@@ -48,7 +48,7 @@ export default function Bibliography() {
       url: "https://stackoverflow.com/questions/36162714/what-is-the-difference-between-is-a-relationship-and-has-a-relationship-in",
     },
     {
-      name: "Inheritance, Interfaces, and Polymorphism - Google Drive",
+      name: "Inheritance, Interfaces, and Polymorphism - Google Classroom",
       url: "https://drive.google.com/file/d/14M8uXmlNZlOISfPyGy4UW0y-xEVKYgMH/view",
     },
     {
@@ -96,11 +96,11 @@ export default function Bibliography() {
       url: "https://www.youtube.com/watch?v=5v29UW14WPQ",
     },
     {
-      name: "Arrays Learning - Google Drive (File 1)",
+      name: "Arrays Learning - Google Classroom (File 1)",
       url: "https://drive.google.com/file/d/1rHdqNbysTjNvlfb6h3c-QXNwjzn9FPEt/view",
     },
     {
-      name: "Arrays Learning - Google Drive (File 2)",
+      name: "Arrays Learning - Google Classroom (File 2)",
       url: "https://drive.google.com/file/d/1Q-oOXtAciGTgGmtz4dvhm-jAg8TT3nbX/view",
     },
     {
@@ -120,7 +120,7 @@ export default function Bibliography() {
       url: "https://medium.com/@codingsam/common-mistakes-in-java-c138499e3a8e",
     },
     {
-      name: "ArrayList Learning - Google Drive",
+      name: "ArrayList Learning - Google Classroom",
       url: "https://drive.google.com/file/d/1sWnDu2mpqf36EELEJJ5LHSgS_4mpSwhs/view",
     },
     {
@@ -148,7 +148,7 @@ export default function Bibliography() {
       url: "https://www.w3schools.com/dsa/dsa_algo_quicksort.php",
     },
     {
-      name: "Sorting Lesson - Google Drive",
+      name: "Sorting Lesson - Google Classroom",
       url: "https://drive.google.com/file/d/1s0TkBqtKrnjcsUyWNOP7-Fvp3zKvWYYw/view",
     },
   ];

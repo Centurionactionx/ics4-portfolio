@@ -25,7 +25,6 @@ export default function OOP3() {
     <main className="min-h-screen bg-black pt-16">
       <div className="flex items-center justify-center">
         <div className="background-gradient">
-
           <div className="menu-container">
             <div className="bg-[#121212] rounded-lg p-4">
               <h2 className="text-white font-bold mb-4">Contents</h2>
@@ -106,13 +105,11 @@ export default function OOP3() {
             </div>
           </div>
 
-
           <div className="flex flex-col items-center min-h-screen">
             <h1 className="text-white text-[50px] font-bold pt-3 pb-3">
               OOP 3
             </h1>
 
-            {/* Introduction Section */}
             <div ref={introductionRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Introduction and Definitions</h1>
@@ -128,7 +125,6 @@ export default function OOP3() {
               </div>
             </div>
 
-            {/* this() and super() Section */}
             <div ref={thisSuperRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">this() and super() Functions</h1>
@@ -159,7 +155,6 @@ export default function OOP3() {
               </div>
             </div>
 
-            {/* Static vs Dynamic Binding Section */}
             <div ref={bindingRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Static vs Dynamic Binding</h1>
@@ -191,7 +186,6 @@ export default function OOP3() {
               </div>
             </div>
 
-            {/* Polymorphism Section */}
             <div ref={polymorphismRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Polymorphism</h1>
@@ -218,7 +212,6 @@ export default function OOP3() {
               </div>
             </div>
 
-            {/* Abstract Classes Section */}
             <div ref={abstractRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Abstract Classes</h1>
@@ -247,7 +240,6 @@ export default function OOP3() {
               </div>
             </div>
 
-            {/* Interfaces Section */}
             <div ref={interfacesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Interfaces</h1>
@@ -265,20 +257,26 @@ export default function OOP3() {
                 <p className="section-paragraph">
                   Example implementation using interface SmartDevice:
                 </p>
-                <Image
-                  src="/interface1.png"
-                  alt="Interface Example"
-                  width={800}
-                  height={300}
-                  className="example-code"
-                />
-                <Image
-                  src="/interface2.png"
-                  alt="Interface Example"
-                  width={800}
-                  height={300}
-                  className="example-code"
-                />
+                <div className="flex flex-wrap justify-center gap-4 mb-5">
+                  <div className="relative w-[45%] aspect-[8/3]">
+                    <Image
+                      src="/interface1.png"
+                      alt="Interface Example 1"
+                      fill
+                      className="object-contain"
+                      priority
+                    />
+                  </div>
+                  <Image
+                    src="/interface2.png"
+                    alt="Interface Example 2"
+                    width={0}
+                    height={0}
+                    sizes="(max-width: px) 100vw, 45vw"
+                    className="w-[45%]"
+                    priority
+                  />
+                </div>
               </div>
             </div>
 
@@ -469,7 +467,6 @@ public class BananaTest {
               </div>
             </div>
 
-            {/* Sources Section */}
             {/* Sources Section */}
             <div ref={sourcesRef} className="section-container">
               <div className="section-content">

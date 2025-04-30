@@ -22,10 +22,7 @@ export default function ArrayLists() {
   return (
     <main className="min-h-screen bg-black pt-16">
       <div className="flex items-center justify-center">
-        <div
-          className="background-gradient"
-        >
-
+        <div className="background-gradient">
           <div className="menu-container">
             <div className="bg-[#121212] rounded-lg p-4">
               <h2 className="text-white font-bold mb-4">Contents</h2>
@@ -112,7 +109,13 @@ export default function ArrayLists() {
                   ArrayLists are like Arrays but with dynamic sizes. They are
                   different from traditional arrays because they can grow or
                   shrink as needed. They are more flexible for situations where
-                  an amount of data might change over time.
+                  an amount of data might change over time. ArrayLists bring
+                  many useful built in methods such as add(), remove(), size(),
+                  get(), and contains() for manipulating and querying the list.
+                  Different from traditional arrays, ArrayLists can only store
+                  objects, not primitive types. For primitive types like int or
+                  double, you must use their corresponding wrapper classes
+                  (Integer, Double, etc.).
                 </p>
               </div>
             </div>
@@ -143,7 +146,8 @@ export default function ArrayLists() {
 
                 <pre className="code-block">
                   <code>
-                    ArrayList&lt;String&gt; names = new ArrayList&lt;&gt;();
+                    ArrayList&lt;String&gt; names = new
+                    ArrayList&lt;String&gt;();
                   </code>
                 </pre>
               </div>
@@ -180,7 +184,19 @@ export default function ArrayLists() {
 
                 <p className="section-paragraph">
                   These can mostly be found in the Java quick reference sheet.
+                  The syntax for using these ArrayList methods is:
                 </p>
+
+                <pre className="code-block">
+                  <code>
+                    ArrayList&lt;Type&gt; name = new ArrayList&lt;Type&gt;();
+                    {"\n"}
+                    name.add(value);{"\n"}
+                    name.get(index);{"\n"}
+                    name.set(index, value);{"\n"}
+                    name.remove(index);
+                  </code>
+                </pre>
               </div>
             </div>
 

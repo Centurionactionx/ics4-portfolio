@@ -22,7 +22,6 @@ export default function OOP1() {
     <main className="min-h-screen bg-black pt-16">
       <div className="flex items-center justify-center">
         <div className="background-gradient">
-
           <div className="menu-container">
             <div className="bg-[#121212] rounded-lg p-4">
               <h2 className="text-white font-bold mb-4">Contents</h2>
@@ -122,13 +121,23 @@ export default function OOP1() {
                   relationships between different classes. It gives a sense of
                   the logical flow in a program.
                 </p>
-                <Image
-                  src="/uml.png"
-                  alt="Header Artwork"
-                  width={800}
-                  height={300}
-                  className="example-code"
-                />
+
+                <p className="section-paragraph">
+                 Inside a UML, variables are written with the syntax "+/- indicating private or public, followed by the variable name, followed by a colon then the type of the variable. Same goes for methods, but methods returning type void
+                </p>
+
+                <figure>
+                  <Image
+                    src="/uml.png"
+                    alt="uml example"
+                    width={800}
+                    height={300}
+                    className="example-code mb-1"
+                  />
+                  <figcaption className="caption">
+                    Example of a UML diagram showing a class, House. From Google Classroom UML teaching material.
+                  </figcaption>
+                </figure>
               </div>
             </div>
 

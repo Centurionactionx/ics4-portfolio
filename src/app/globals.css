@@ -32,11 +32,11 @@ body {
 }
 
 .section-container {
-  @apply bg-[#121212] rounded-lg pt-5 pr-5 pl-5 mb-5;
+  @apply bg-[#121212] w-[70vw] rounded-lg pt-5 pr-5 pl-5 mb-5;
 }
 
 .section-content {
-  @apply w-[75vh] text-white;
+  @apply w-full text-white;
 }
 
 .menu-container {
@@ -47,15 +47,19 @@ body {
 }
 
 .code-block {
-  @apply bg-[#1a1a1a] p-3 rounded-md mb-5 text-sm;
+  @apply bg-[#1a1a1a] p-3 rounded-md mb-5 text-sm text-wrap;
 }
 
 .section-paragraph {
-  @apply text-sm text-gray-300 leading-relaxed mb-5;
+  @apply text-[16px] text-gray-300 leading-relaxed mb-5;
 }
 
 .example-code {
-  @apply w-[70%] object-cover rounded-md mb-5 mx-auto;
+  @apply w-[50%] object-cover rounded-md mb-5 mx-auto;
+}
+
+.caption{
+  @apply text-center text-sm text-gray-400 mb-5
 }
 
 .page-background {

@@ -83,7 +83,6 @@ export default function Arrays() {
               Arrays
             </h1>
 
-            {/* Introduction Section */}
             <div ref={introductionRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Introduction and Definitions</h1>
@@ -95,7 +94,6 @@ export default function Arrays() {
               </div>
             </div>
 
-            {/* 1D Arrays Section */}
             <div ref={oneDArraysRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">1D Arrays</h1>
@@ -142,7 +140,6 @@ export default function Arrays() {
               </div>
             </div>
 
-            {/* 2D Arrays Section */}
             <div ref={twoDArraysRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">2D Arrays</h1>
@@ -180,7 +177,6 @@ export default function Arrays() {
               </div>
             </div>
 
-            {/* Examples Section */}
             <div ref={examplesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Examples</h1>
@@ -209,7 +205,6 @@ export default function Arrays() {
               </div>
             </div>
 
-            {/* Common Mistakes Section */}
             <div ref={mistakesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Common Mistakes</h1>
@@ -253,7 +248,6 @@ numbers[3] = 10; // Throws ArrayIndexOutOfBoundsException`}
               </div>
             </div>
 
-            {/* References Section */}
             <div ref={referencesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">References</h1>

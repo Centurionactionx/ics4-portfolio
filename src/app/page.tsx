@@ -7,8 +7,7 @@ export default function Home() {
     <main className="min-h-screen bg-black pt-16">
       <div className="background-gradient">
         <div className="flex flex-col items-center min-h-screen">
-          <div className="bg-[#121212] m-2.5 rounded-lg w-[60vh] p-6 flex flex-col items-center mt-4">
-
+          <div className="bg-[#121212] m-2.5 rounded-lg w-[80vh] p-6 flex flex-col items-center mt-4">
             <div className="w-full flex flex-col items-center">
               <Image
                 src="/me.png"
@@ -37,7 +36,7 @@ export default function Home() {
               <div className="bg-white h-2.5 rounded-lg w-full my-4" />
 
               <div className="grid grid-cols-3 gap-2.5 w-full mt-2.5">
-                <div className="flex justify-center items-center">
+                <div className="flex justify-end">
                   <Image
                     src="/shuffle.png"
                     alt="Shuffle"
@@ -73,7 +72,7 @@ export default function Home() {
                     priority
                   />
                 </div>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-start">
                   <Image
                     src="/repeat.png"
                     alt="Repeat"
@@ -87,7 +86,7 @@ export default function Home() {
             </div>
           </div>
           <div className="section-container">
-            <div className="w-[56vh]">
+            <div className="section-content">
               <h2 className="section-title">Introduction</h2>
               <p className="section-paragraph">
                 Welcome. This is my ICS4UO portfolio. This is where you can find
@@ -110,6 +109,15 @@ export default function Home() {
                 enjoy mountain biking if I’m not injured. After reading through
                 the tutorials, you might discover that I have a liking for
                 bananas.
+              </p>
+
+              <h2 className="section-title">Future Aspirations</h2>
+              <p className="section-paragraph">
+                My goal is to become an aerospace engineer. I like to work on 
+                hands-on engineering projects and I have a fascination for aerospace 
+                in general. I'd like to be able to work with a company that speciailzes 
+                in aerospace defense contracting. On top of that, I aspire to represent 
+                Canada on the world stage in Ultimate Frisbee. 
               </p>
             </div>
           </div>

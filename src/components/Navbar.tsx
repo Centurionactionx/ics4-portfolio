@@ -112,6 +112,13 @@ export default function Navbar() {
                 >
                   Searching and Sorting
                 </Link>
+                <Link
+                  href="/tutorials/recursion"
+                  className="block px-4 py-2 text-white hover:bg-[#1DB954] hover:text-white"
+                  onClick={() => setIsTutorialsOpen(false)}
+                >
+                  Recursion
+                </Link>
               </div>
             )}
           </li>
