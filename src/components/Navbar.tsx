@@ -12,7 +12,6 @@ export default function Navbar() {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -35,7 +34,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full bg-[#121212] px-8 py-4 shadow-md z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="text-white text-2xl font-bold">
-          JW
+          Joseph Wang
         </Link>
 
         <ul className="flex space-x-8">
