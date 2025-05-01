@@ -32,7 +32,7 @@ export default function OOP3() {
                 <li>
                   <button
                     onClick={() => scrollToSection(introductionRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     1. Introduction
                   </button>
@@ -40,7 +40,7 @@ export default function OOP3() {
                 <li>
                   <button
                     onClick={() => scrollToSection(thisSuperRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     2. this() and super()
                   </button>
@@ -48,7 +48,7 @@ export default function OOP3() {
                 <li>
                   <button
                     onClick={() => scrollToSection(bindingRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     3. Static vs Dynamic Binding
                   </button>
@@ -56,7 +56,7 @@ export default function OOP3() {
                 <li>
                   <button
                     onClick={() => scrollToSection(polymorphismRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     4. Polymorphism
                   </button>
@@ -64,7 +64,7 @@ export default function OOP3() {
                 <li>
                   <button
                     onClick={() => scrollToSection(abstractRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     5. Abstract Classes
                   </button>
@@ -72,7 +72,7 @@ export default function OOP3() {
                 <li>
                   <button
                     onClick={() => scrollToSection(interfacesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     6. Interfaces
                   </button>
@@ -80,7 +80,7 @@ export default function OOP3() {
                 <li>
                   <button
                     onClick={() => scrollToSection(comparisonRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     7. Interfaces vs Abstract classes
                   </button>
@@ -88,7 +88,7 @@ export default function OOP3() {
                 <li>
                   <button
                     onClick={() => scrollToSection(mistakesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     8. Common Mistakes
                   </button>
@@ -96,7 +96,7 @@ export default function OOP3() {
                 <li>
                   <button
                     onClick={() => scrollToSection(sourcesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     9. References
                   </button>

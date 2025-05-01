@@ -28,7 +28,7 @@ export default function OOP2() {
                 <li>
                   <button
                     onClick={() => scrollToSection(introductionRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     1. Introduction
                   </button>
@@ -36,7 +36,7 @@ export default function OOP2() {
                 <li>
                   <button
                     onClick={() => scrollToSection(mutatorAccessorRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     2. Mutator and Accessor Methods
                   </button>
@@ -44,7 +44,7 @@ export default function OOP2() {
                 <li>
                   <button
                     onClick={() => scrollToSection(superSubclassRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     3. Super-Subclass Relationship
                   </button>
@@ -52,7 +52,7 @@ export default function OOP2() {
                 <li>
                   <button
                     onClick={() => scrollToSection(isAHasARef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     4. IS-A(n) and HAS-A(n) Relationships
                   </button>
@@ -60,7 +60,7 @@ export default function OOP2() {
                 <li>
                   <button
                     onClick={() => scrollToSection(commonMistakesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     5. Common Mistakes
                   </button>
@@ -68,7 +68,7 @@ export default function OOP2() {
                 <li>
                   <button
                     onClick={() => scrollToSection(sourcesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     6. References
                   </button>

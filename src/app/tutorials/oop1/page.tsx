@@ -29,7 +29,7 @@ export default function OOP1() {
                 <li>
                   <button
                     onClick={() => scrollToSection(introductionRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     1. Introduction
                   </button>
@@ -37,7 +37,7 @@ export default function OOP1() {
                 <li>
                   <button
                     onClick={() => scrollToSection(umlsRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     2. UMLs
                   </button>
@@ -45,7 +45,7 @@ export default function OOP1() {
                 <li>
                   <button
                     onClick={() => scrollToSection(instanceStaticRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     3. Instance vs Static Methods
                   </button>
@@ -53,7 +53,7 @@ export default function OOP1() {
                 <li>
                   <button
                     onClick={() => scrollToSection(constructorsRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     4. Constructors
                   </button>
@@ -61,7 +61,7 @@ export default function OOP1() {
                 <li>
                   <button
                     onClick={() => scrollToSection(commonMistakesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     5. Common Mistakes
                   </button>
@@ -69,7 +69,7 @@ export default function OOP1() {
                 <li>
                   <button
                     onClick={() => scrollToSection(sourcesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     6. References
                   </button>

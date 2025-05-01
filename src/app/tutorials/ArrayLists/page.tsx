@@ -30,7 +30,7 @@ export default function ArrayLists() {
                 <li>
                   <button
                     onClick={() => scrollToSection(introductionRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     1. Introduction
                   </button>
@@ -38,7 +38,7 @@ export default function ArrayLists() {
                 <li>
                   <button
                     onClick={() => scrollToSection(declarationRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     2. Declaration
                   </button>
@@ -46,7 +46,7 @@ export default function ArrayLists() {
                 <li>
                   <button
                     onClick={() => scrollToSection(methodsRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     3. Methods
                   </button>
@@ -54,7 +54,7 @@ export default function ArrayLists() {
                 <li>
                   <button
                     onClick={() => scrollToSection(operationsRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     4. Operations
                   </button>
@@ -62,7 +62,7 @@ export default function ArrayLists() {
                 <li>
                   <button
                     onClick={() => scrollToSection(examplesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     5. Examples
                   </button>
@@ -70,7 +70,7 @@ export default function ArrayLists() {
                 <li>
                   <button
                     onClick={() => scrollToSection(mistakesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     6. Common Mistakes
                   </button>
@@ -78,7 +78,7 @@ export default function ArrayLists() {
                 <li>
                   <button
                     onClick={() => scrollToSection(boxingRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     7. Autoboxing
                   </button>
@@ -86,7 +86,7 @@ export default function ArrayLists() {
                 <li>
                   <button
                     onClick={() => scrollToSection(referencesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     8. References
                   </button>

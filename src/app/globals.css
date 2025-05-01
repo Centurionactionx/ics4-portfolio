@@ -62,6 +62,10 @@ body {
   @apply text-center text-sm text-gray-400 mb-5
 }
 
+.hover-button{
+  @apply text-white hover:text-green-300 text-left w-full cursor-pointer
+}
+
 .page-background {
   background: linear-gradient(135deg, #121212 0%, #0a0a0a 50%, #121212 100%);
   position: relative;

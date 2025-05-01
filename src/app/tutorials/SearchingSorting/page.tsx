@@ -29,7 +29,7 @@ export default function SearchingSorting() {
                 <li>
                   <button
                     onClick={() => scrollToSection(introductionRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     1. Introduction
                   </button>
@@ -37,25 +37,31 @@ export default function SearchingSorting() {
                 <li>
                   <button
                     onClick={() => scrollToSection(useCasesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     2. Use Cases
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => scrollToSection(searchingRef)}>
+                  <button
+                    onClick={() => scrollToSection(searchingRef)}
+                    className="hover-button"
+                  >
                     3. Searching Algorithms
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => scrollToSection(sortingRef)}>
+                  <button
+                    onClick={() => scrollToSection(sortingRef)}
+                    className="hover-button"
+                  >
                     4. Sorting Algorithms
                   </button>
                 </li>
                 <li>
                   <button
                     onClick={() => scrollToSection(examplesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     5. Examples
                   </button>
@@ -63,7 +69,7 @@ export default function SearchingSorting() {
                 <li>
                   <button
                     onClick={() => scrollToSection(mistakesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     6. Common Mistakes
                   </button>
@@ -71,7 +77,7 @@ export default function SearchingSorting() {
                 <li>
                   <button
                     onClick={() => scrollToSection(referencesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     7. References
                   </button>

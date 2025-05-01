@@ -26,7 +26,7 @@ export default function RecursionPage() {
                 <li>
                   <button
                     onClick={() => scrollToSection(introRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     1. Introduction
                   </button>
@@ -34,7 +34,7 @@ export default function RecursionPage() {
                 <li>
                   <button
                     onClick={() => scrollToSection(baseCaseRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     2. Base Cases
                   </button>
@@ -42,7 +42,7 @@ export default function RecursionPage() {
                 <li>
                   <button
                     onClick={() => scrollToSection(examplesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     3. Examples
                   </button>
@@ -50,7 +50,7 @@ export default function RecursionPage() {
                 <li>
                   <button
                     onClick={() => scrollToSection(mistakesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     4. Common Mistakes
                   </button>
@@ -58,7 +58,7 @@ export default function RecursionPage() {
                 <li>
                   <button
                     onClick={() => scrollToSection(sourcesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     5. References
                   </button>

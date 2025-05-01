@@ -29,7 +29,7 @@ export default function Arrays() {
                 <li>
                   <button
                     onClick={() => scrollToSection(introductionRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     1. Introduction
                   </button>
@@ -37,7 +37,7 @@ export default function Arrays() {
                 <li>
                   <button
                     onClick={() => scrollToSection(oneDArraysRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     2. 1D Arrays
                   </button>
@@ -45,7 +45,7 @@ export default function Arrays() {
                 <li>
                   <button
                     onClick={() => scrollToSection(twoDArraysRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     3. 2D Arrays
                   </button>
@@ -53,7 +53,7 @@ export default function Arrays() {
                 <li>
                   <button
                     onClick={() => scrollToSection(examplesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     4. Examples
                   </button>
@@ -61,7 +61,7 @@ export default function Arrays() {
                 <li>
                   <button
                     onClick={() => scrollToSection(mistakesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     5. Common Mistakes
                   </button>
@@ -69,7 +69,7 @@ export default function Arrays() {
                 <li>
                   <button
                     onClick={() => scrollToSection(referencesRef)}
-                    className="text-white hover:text-gray-300 text-left w-full cursor-pointer"
+                    className="hover-button"
                   >
                     6. References
                   </button>
