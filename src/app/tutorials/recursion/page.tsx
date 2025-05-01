@@ -84,7 +84,7 @@ export default function RecursionPage() {
                   else to pass the task on to. Then, the task finally gets done.
                 </p>
                 <p className="section-paragraph">
-                  In programming, recursive solutions often mirror mathematical
+                  In programming, recursive solutions are similar to mathematical
                   induction, with a base case and recursive case. They're
                   particularly useful for problems that can be divided into
                   similar subproblems, like tree traversals or
@@ -114,7 +114,9 @@ export default function RecursionPage() {
                   Every recursive function must have a base case - the condition
                   that stops the recursion. Without it, the function would call
                   itself indefinitely until the stack overflows (hence the term
-                  "stack overflow" error). Most IDEs will warn you if you don't have a base case. But it is important not to rely on the IDE to catch errors.
+                  "stack overflow" error). Most IDEs will warn you if you don't 
+                  have a base case. But it is important not to rely on your IDE 
+                  to catch errors.
                 </p>
                 <p className="section-paragraph">
                   Consider peeling a banana - the base case is when there's no

@@ -100,7 +100,6 @@ export default function ArrayLists() {
               ArrayLists
             </h1>
 
-            {/* Introduction Section */}
             <div ref={introductionRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Introduction</h1>
@@ -120,7 +119,6 @@ export default function ArrayLists() {
               </div>
             </div>
 
-            {/* Declaration Section */}
             <div ref={declarationRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">
@@ -153,7 +151,6 @@ export default function ArrayLists() {
               </div>
             </div>
 
-            {/* Methods Section */}
             <div ref={methodsRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">ArrayList Methods</h1>
@@ -200,7 +197,6 @@ export default function ArrayLists() {
               </div>
             </div>
 
-            {/* Operations Section */}
             <div ref={operationsRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">
@@ -237,7 +233,6 @@ export default function ArrayLists() {
               </div>
             </div>
 
-            {/* Examples Section */}
             <div ref={examplesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Examples</h1>
@@ -261,7 +256,6 @@ export default function ArrayLists() {
               </div>
             </div>
 
-            {/* Autoboxing Section */}
             <div ref={boxingRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Autoboxing and Autounboxing</h1>
@@ -285,7 +279,6 @@ int num = numbers.get(0); // Unboxing (Integer -> int)`}
               </div>
             </div>
 
-            {/* Common Mistakes Section */}
             <div ref={mistakesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Common Mistakes</h1>
@@ -347,7 +340,6 @@ int days = daysSincePicked.get(2);  // NullPointerException!`}</code>
               </div>
             </div>
 
-            {/* References Section */}
             <div ref={referencesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">References</h1>

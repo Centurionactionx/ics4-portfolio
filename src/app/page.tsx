@@ -113,11 +113,26 @@ export default function Home() {
 
               <h2 className="section-title">Future Aspirations</h2>
               <p className="section-paragraph">
-                My goal is to become an aerospace engineer. I like to work on 
-                hands-on engineering projects and I have a fascination for aerospace 
-                in general. I'd like to be able to work with a company that speciailzes 
-                in aerospace defense contracting. On top of that, I aspire to represent 
-                Canada on the world stage in Ultimate Frisbee. 
+                My goal is to become an aerospace engineer. I like to work on
+                hands-on engineering projects and I have a fascination for
+                aerospace in general. I'd like to be able to work with a company
+                that speciailzes in aerospace defense contracting. On top of
+                that, I aspire to represent Canada on the world stage in
+                Ultimate Frisbee. 
+              </p>
+
+              <h2 className="section-title">Personal Message</h2>
+              <p className="section-paragraph">
+                One of the biggest messages that I carry with me is the thought
+                that everything is not as serious as it might seem. It could be
+                when someone bumped you on a bus, or made an offensive joke towards
+                your clothing during the day. At the end of the day, little things
+                like that don't matter as much as you might overthink it does. 
+                There's no point in worring about little things in life as it 
+                only takes away your time from the more important ones. You should
+                focus on the big picture and the things that really matter. If you
+                can't focus on the important things, then you're not really living
+                your life to the fullest.
               </p>
             </div>
           </div>

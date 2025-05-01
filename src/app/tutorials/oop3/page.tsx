@@ -302,7 +302,6 @@ export default function OOP3() {
                       </tr>
                     </thead>
                     <tbody>
-                      {/* Row 1 */}
                       <tr className="border-b border-gray-700">
                         <th className="px-4 py-2 text-left">
                           Multiple inheritance
@@ -311,7 +310,6 @@ export default function OOP3() {
                         <td className="px-4 py-2">Yes</td>
                       </tr>
 
-                      {/* Row 2 */}
                       <tr className="border-b border-gray-700">
                         <th className="px-4 py-2 text-left">
                           Instance variables{" "}
@@ -320,14 +318,12 @@ export default function OOP3() {
                         <td className="px-4 py-2">No (constants only)</td>
                       </tr>
 
-                      {/* Row 3 */}
                       <tr className="border-b border-gray-700">
                         <th className="px-4 py-2 text-left">Has Constructor</th>
                         <td className="px-4 py-2">Yes</td>
                         <td className="px-4 py-2">No</td>
                       </tr>
 
-                      {/* Row 4 */}
                       <tr className="border-b border-gray-700">
                         <th className="px-4 py-2 text-left">
                           Method implementation
@@ -340,7 +336,6 @@ export default function OOP3() {
                         </td>
                       </tr>
 
-                      {/* Row 5 */}
                       <tr className="border-b border-gray-700">
                         <th className="px-4 py-2 text-left">
                           Access modifiers
@@ -349,7 +344,6 @@ export default function OOP3() {
                         <td className="px-4 py-2">Public only (methods)</td>
                       </tr>
 
-                      {/* Row 6 */}
                       <tr className="border-b border-gray-700">
                         <th className="px-4 py-2 text-left">Inheritance</th>
                         <td className="px-4 py-2">
@@ -360,7 +354,6 @@ export default function OOP3() {
                         </td>
                       </tr>
 
-                      {/* Row 7 */}
                       <tr className="border-b border-gray-700">
                         <th className="px-4 py-2 text-left">Purpose</th>
                         <td className="px-4 py-2">
@@ -381,7 +374,6 @@ export default function OOP3() {
               </div>
             </div>
 
-            {/* Common Mistakes Section */}
             <div ref={mistakesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Common Mistakes</h1>
@@ -467,7 +459,6 @@ public class BananaTest {
               </div>
             </div>
 
-            {/* Sources Section */}
             <div ref={sourcesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">References</h1>

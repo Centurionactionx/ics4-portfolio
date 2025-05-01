@@ -21,7 +21,6 @@ export default function OOP2() {
     <main className="min-h-screen bg-black pt-16">
       <div className="flex items-center justify-center">
         <div className="background-gradient">
-
           <div className="w-64 fixed left-0 top-37 h-screen p-4 overflow-y-auto">
             <div className="bg-[#121212] rounded-lg p-4">
               <h2 className="text-white font-bold mb-4">Contents</h2>
@@ -78,13 +77,11 @@ export default function OOP2() {
             </div>
           </div>
 
-
           <div className="flex flex-col items-center min-h-screen">
             <h1 className="text-white text-[50px] font-bold pt-3 pb-3">
               OOP 2
             </h1>
 
-            {/* Introduction Section */}
             <div ref={introductionRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Introduction</h1>
@@ -104,7 +101,6 @@ export default function OOP2() {
               </div>
             </div>
 
-            {/* Mutator and Accessor Methods Section */}
             <div ref={mutatorAccessorRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Mutator and Accessor Methods</h1>
@@ -149,14 +145,24 @@ export default function OOP2() {
               </div>
             </div>
 
-            {/* Super-Subclass Relationship Section */}
             <div ref={superSubclassRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Super-Subclass Relationship</h1>
                 <p className="section-paragraph">
                   A superclass and subclass are related in that the subclass
-                  inherits public fields and methods from its superclass. The
-                  syntax is defined with: <br></br>
+                  inherits public fields and methods from its superclass. A
+                  subclass can use inherited methods and fields as they
+                  originally were. Or, they can override inherited methods to
+                  adjust for its needs. They can also add new fields and methods
+                  that are specific to itself. A subclass object can be assigned
+                  to a reference variable of its parent class. This is because
+                  every subclass is also an instance of its superclass because
+                  of inheritance. This is also known as upcasting, which gets
+                  into polymorphism. However, the reverse is not allowed: you
+                  cannot assign a superclass object to a subclass reference
+                  variable without an explicit cast, and even then, it will
+                  cause a runtime error if the object is not actually an
+                  instance of the subclass The syntax is defined with: <br></br>
                   [subclass name] extends [superclass name]”
                   <br></br> <br></br>
                   For example, here is a demonstration with a fruit and a
@@ -172,7 +178,6 @@ export default function OOP2() {
               </div>
             </div>
 
-            {/* IS-A(n) and HAS-A(n) Relationships Section */}
             <div ref={isAHasARef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">
@@ -216,7 +221,6 @@ export default function OOP2() {
               </div>
             </div>
 
-            {/* Common Mistakes Section */}
             <div ref={commonMistakesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Common Mistakes</h1>
@@ -329,7 +333,6 @@ public class BananaBasket {
               </div>
             </div>
 
-            {/* Sources Section */}
             <div ref={sourcesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">References</h1>

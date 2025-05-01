@@ -22,7 +22,6 @@ export default function SearchingSorting() {
     <main className="min-h-screen bg-black pt-16">
       <div className="flex items-center justify-center">
         <div className="background-gradient">
-
           <div className="menu-container">
             <div className="bg-[#121212] rounded-lg p-4">
               <h2 className="text-white font-bold mb-4">Contents</h2>
@@ -81,13 +80,11 @@ export default function SearchingSorting() {
             </div>
           </div>
 
-
           <div className="flex flex-col items-center min-h-screen">
             <h1 className="text-white text-[50px] font-bold pt-3 pb-3">
               Searching & Sorting Algorithms
             </h1>
 
-            {/* Introduction Section */}
             <div ref={introductionRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Introduction</h1>
@@ -134,12 +131,10 @@ export default function SearchingSorting() {
               </div>
             </div>
 
-            {/* Searching Algorithms Section */}
             <div ref={searchingRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Searching Algorithms</h1>
 
-                {/* Sequential Search */}
                 <h2 className="text-xl font-semibold mb-2">
                   Sequential Search
                 </h2>
@@ -161,7 +156,20 @@ public int SequentialSearch(String[] fruits, String targetBananaType) {
 }`}</code>
                 </pre>
 
-                {/* Binary Search */}
+                <figure>
+                  <Image
+                    src="/seqsearch2.png"
+                    alt="uml example"
+                    width={800}
+                    height={300}
+                    className="example-code mb-1"
+                  />
+                  <figcaption className="caption">
+                    Diagram of a sequential search algorithm. From
+                    thecleverprogrammer.com.
+                  </figcaption>
+                </figure>
+
                 <h2 className="text-xl font-semibold mb-2">Binary Search</h2>
                 <p className="section-paragraph">
                   Binary search requires a sorted array. It repeatedly divides
@@ -196,15 +204,27 @@ public int BinarySearch(String[] sortedFruits, String targetBananaType) {
 }
 `}</code>
                 </pre>
+
+                <figure>
+                  <Image
+                    src="/binarysearch2.png"
+                    alt="uml example"
+                    width={800}
+                    height={300}
+                    className="example-code mb-1"
+                  />
+                  <figcaption className="caption">
+                    Diagram of a binary search algorithm. From Google Classroom
+                    Searching Algorithms.
+                  </figcaption>
+                </figure>
               </div>
             </div>
 
-            {/* Sorting Algorithms Section */}
             <div ref={sortingRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Sorting Algorithms</h1>
 
-                {/* Selection Sort */}
                 <h2 className="text-xl font-semibold mb-2">Selection Sort</h2>
                 <p className="section-paragraph">
                   Selection sort is an algorithm that divides the array into a
@@ -220,7 +240,6 @@ public int BinarySearch(String[] sortedFruits, String targetBananaType) {
                   minimal swaps are necessary.
                 </p>
 
-                {/* Insertion Sort */}
                 <h2 className="text-xl font-semibold mb-2">Insertion Sort</h2>
                 <p className="section-paragraph">
                   Insertion sort works by repeatedly swapping each element into
@@ -234,7 +253,6 @@ public int BinarySearch(String[] sortedFruits, String targetBananaType) {
                   datasets since minimal swaps are necessary.
                 </p>
 
-                {/* Merge Sort */}
                 <h2 className="text-xl font-semibold mb-2">Merge Sort</h2>
                 <p className="section-paragraph">
                   Merge sort is a recursive divide-and-conquer algorithm that
@@ -248,7 +266,6 @@ public int BinarySearch(String[] sortedFruits, String targetBananaType) {
                   complexity.
                 </p>
 
-                {/* Quick Sort */}
                 <h2 className="text-xl font-semibold mb-2">Quick Sort</h2>
                 <p className="section-paragraph">
                   Quicksort is another recursive divide-and-conquer algorithm.
@@ -266,7 +283,6 @@ public int BinarySearch(String[] sortedFruits, String targetBananaType) {
               </div>
             </div>
 
-            {/* Examples Section */}
             <div ref={examplesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Example Implementations</h1>
@@ -311,7 +327,6 @@ public int BinarySearch(String[] sortedFruits, String targetBananaType) {
               </div>
             </div>
 
-            {/* Common Mistakes Section */}
             <div ref={mistakesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Common Mistakes</h1>
@@ -413,6 +428,16 @@ public int BinarySearch(String[] sortedFruits, String targetBananaType) {
                       className="text-blue-400 hover:underline"
                     >
                       Google Classroom - Sorting Lesson
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://thecleverprogrammer.com/2020/11/10/linear-search-in-c/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:underline"
+                    >
+                      Sequential Search
                     </a>
                   </li>
                 </ul>

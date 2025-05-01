@@ -83,7 +83,6 @@ export default function OOP1() {
               OOP 1
             </h1>
 
-            {/* Introduction Section */}
             <div
               ref={introductionRef as React.RefObject<HTMLDivElement>}
               className="section-container"
@@ -106,7 +105,6 @@ export default function OOP1() {
               </div>
             </div>
 
-            {/* UMLs Section */}
             <div ref={umlsRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">UMLs</h1>
@@ -123,7 +121,10 @@ export default function OOP1() {
                 </p>
 
                 <p className="section-paragraph">
-                 Inside a UML, variables are written with the syntax "+/- indicating private or public, followed by the variable name, followed by a colon then the type of the variable. Same goes for methods, but methods returning type void
+                  Inside a UML, variables are written with the syntax "+/-
+                  indicating private or public, followed by the variable name,
+                  followed by a colon then the type of the variable. Same goes
+                  for methods, but methods returning type void
                 </p>
 
                 <figure>
@@ -135,13 +136,13 @@ export default function OOP1() {
                     className="example-code mb-1"
                   />
                   <figcaption className="caption">
-                    Example of a UML diagram showing a class, House. From Google Classroom UML teaching material.
+                    Example of a UML diagram showing a class, House. From Google
+                    Classroom UML teaching material.
                   </figcaption>
                 </figure>
               </div>
             </div>
 
-            {/* Instance vs Static Methods Section */}
             <div ref={instanceStaticRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Instance vs Static Methods</h1>
@@ -174,7 +175,6 @@ export default function OOP1() {
               </div>
             </div>
 
-            {/* Constructors Section */}
             <div ref={constructorsRef} className="section-container">
               <div className="section-content">
                 <h2 className="text-xl font-semibold mb-2">Constructors</h2>
@@ -185,12 +185,23 @@ export default function OOP1() {
                   automatically created by the compiler if no constructors are
                   defined in the class. Constructors do not have a return type,
                   not even void. Constructors are able to be overloaded and even
-                  chained.
+                  chained. Example constructors for a Banana class:
                 </p>
+
+                  <pre className="code-block">
+                    <code>{`
+public Banana() { // No argument constructor
+    this("regular"); // Calls the parameterized constructor
+}
+
+public Banana(String type) { // Parameterized constructor
+    this.type = type; // Sets the type of the banana
+}
+    `}</code>
+                  </pre>
               </div>
             </div>
 
-            {/* Common Mistakes Section */}
             <div ref={commonMistakesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">Common Mistakes</h1>
@@ -289,7 +300,6 @@ public class BananaPeel {
               </div>
             </div>
 
-            {/* Sources Section */}
             <div ref={sourcesRef} className="section-container">
               <div className="section-content">
                 <h1 className="section-title">References</h1>
