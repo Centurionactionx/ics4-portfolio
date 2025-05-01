@@ -47,7 +47,7 @@ body {
 }
 
 .code-block {
-  @apply bg-[#1a1a1a] p-3 rounded-md mb-5 text-sm text-wrap;
+  @apply bg-[#1a1a1a] p-3 rounded-md mb-5 text-sm text-wrap w-max mx-auto;
 }
 
 .section-paragraph {
