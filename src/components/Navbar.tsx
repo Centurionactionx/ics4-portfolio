@@ -132,6 +132,16 @@ export default function Navbar() {
               Bibliography
             </Link>
           </li>
+          <li>
+            <Link
+              href="/blog"
+              className={`text-white hover:text-[#1DB954] transition-colors ${
+                pathname === "/blog" ? "text-[#1DB954]" : ""
+              }`}
+            >
+              Blog
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
